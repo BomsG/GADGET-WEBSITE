@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GADget Website</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+  <div class="main">
+      <!-- for the nav Area -->
+          <nav >
+               <h1>GAD<span style="color: #830be6;">get</span></h1>
+               <button onclick="myFunction()" class="dropbtn">Menu</button>
+               <div id="myDropdown" class="dropdown-content">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="../html/form.html">Login / Signup</a></li>
+              </div>
+        </nav>
+        <!-- end of Nav -->
+
+        <!-- the text starts here -->
+        <div class="content container-fluid justify-content-sm-center">
+            <div class="content-text ">
+              <h2>Let's help you with your <span> GADget</span>
+                  <div class="roller"><span id="rolltext">AFFORDABLE <br>
+                    RELIABLE<br>
+                    FAST DELIVERY<br></span></div>
+                    <span id="spare-time" >We offer the best</span>
+                 </div>
+              </h2>
+           </div>
+           <!-- End of Hero section -->
+  </div>
+        <!-- Main div Ends here -->
+        <!-- the body design starts here -->
+
+        <h3 class="text-center m-5 text-BLACK">Accesories:</h3>
+        <div class="container">
+            <div class="box">
+               <img src="../images/laptop.png.png">
+               <span>LAPTOPS</span>
+            </div>
+           <div class="box">
+              <img src="../images/ipad.png.png">
+              <span>IPADS</span>
+           </div>
+           <div class="box">
+              <img src="../images/desktop.png.png">
+              <span>WEBCAM</span>
+           </div>
+           <div class="box">
+             <img src="../images/phone.png.png">
+             <span>IPHONES</span>
+          </div>
+        </div>
+        <button href="../html/form.html" class="register">Register</button>
+        <div class="about">
+          <!-- the about us  -->
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Et qui consequuntur asperiores molestias quam vitae animi
+             quae voluptate ut quidem rem sit sunt excepturi ullam optio 
+             doloremque nobis quaerat dolor distinctio numquam vero nam,
+              sequi ducimus. Optio,
+             non. Nobis itaque deleniti officia quod! Iure veritatis
+              soluta natus, totam unde officia!
+          </p>
+        </div>
+         <!-- about us ends here -->
+         <!-- review starts here -->
+
+          <div class="review">
+              <div class="first">
+                 <q>Lorem ipsum dolor sit amet <br>consectetur adipisicing 
+                  elit. <br>Sed excepturi ea repudiandae<br> dicta minima veritatis 
+                  repellat, consequuntur sequi!</q> <hr>
+                  <p>Geoffery Kayode. (User)</p>
+              </div>
+              <div class="second">
+                <q>Lorem ipsum dolor sit amet<br> consectetur<b></b> 
+                  adipisicing elit. <br>Deleniti corporis cupiditate
+                   consequatur nobis <br>id iste fugit amet magni.</q> <hr>
+                   <p>Andrew Stephen. (User)</p>
+              </div>
+          </div>
+          <!-- review ends here -->
+          <!-- the footer section -->
+          <footer>
+            <p class="text-center">Contact Us</p>
+            <div class="handles">
+                <img src="../images/facebook.png.png" class="img-respnsive" >
+                <img src="../images/twitter.png (2).png" class="img-respnsive ">
+                <img src="../images/instagram.png (1).png" class="img-respnsive ">
+
+            </div>
+           
+            <hr>
+          </footer>
+          <!-- footer ends here -->
+       
+       <!-- javascript for the Nav button -->
+
+        <script>
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+           openDropdown.classList.remove('show');
+        }
+       }
+     }
+   }
+
+
+
+
+        </script>
+</body>
+</html>
